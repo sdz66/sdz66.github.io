@@ -109,13 +109,15 @@
 
     <div class="box-container">
 
+
+
         <div class="box">
-<!--            <span class="discount">-10%</span>-->
             <div class="image">
                 <img src="images/sp1.jpg" alt="">
                 <div class="icons">
                     <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">查看</a>
+                    <a href="#" class="cart-btn" data-id="1">查看</a>
+<!--                    <a href="#" class="cart-btn">查看</a>-->
                     <a href="#" class="fas fa-share"></a>
                 </div>
             </div>
@@ -491,6 +493,26 @@
             successMessage.style.display = 'none';
         }, 3000);
     }
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 获取所有“查看”按钮
+        const viewButtons = document.querySelectorAll('.cart-btn');
+
+        // 为每个“查看”按钮添加点击事件监听器
+        viewButtons.forEach(function(button) {
+            button.addEventListener('click', function(event) {
+                event.preventDefault(); // 阻止默认行为
+
+                // 获取商品ID
+                const productId = this.getAttribute('data-id');
+
+                // 跳转到详情页并传递商品ID
+                window.location.href = `details.html?id=${productId}`;
+            });
+        });
+    });
 </script>
 <!-- 健康咨询 ends -->
 
