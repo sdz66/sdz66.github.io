@@ -436,7 +436,7 @@
 <section class="contact" id="contact">
     <h1 class="heading"> <span>健康</span>咨询</h1>
     <div class="row">
-        <form action="">
+        <form id="consultationForm">
             <input type="text" placeholder="姓名" class="box" required>
             <input type="tel" placeholder="联系电话" class="box" required>
             <select class="box" required>
@@ -453,6 +453,45 @@
         </div>
     </div>
 </section>
+
+<script>
+    // 获取表单元素
+    const form = document.getElementById('consultationForm');
+
+    // 添加表单提交事件监听器
+    form.addEventListener('submit', function(event) {
+        // 阻止表单的默认提交行为
+        event.preventDefault();
+
+        // 显示成功提交的提示
+        showSuccessMessage();
+
+        // 清空表单
+        form.reset();
+    });
+
+    // 显示成功消息的函数
+    function showSuccessMessage() {
+        const successMessage = document.createElement('div');
+        successMessage.className = 'success-message';
+        successMessage.textContent = '信息已提交';
+
+        // 将成功消息添加到表单上方
+        form.parentNode.insertBefore(successMessage, form);
+
+        // 设置成功消息的样式
+        successMessage.style.color = 'green';
+        successMessage.style.padding = '10px';
+        successMessage.style.marginBottom = '20px';
+        successMessage.style.border = '1px solid #4CAF50';
+        successMessage.style.borderRadius = '5px';
+
+        // 几秒钟后自动隐藏成功消息
+        setTimeout(function() {
+            successMessage.style.display = 'none';
+        }, 3000);
+    }
+</script>
 <!-- 健康咨询 ends -->
 
 <!-- 页脚 -->
