@@ -8,7 +8,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     outline: none; border:none;
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform: lowercase;
     transition: .2s linear;
 }
 
