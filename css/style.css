@@ -203,7 +203,7 @@ header .fa-bars{
 
 .about .row .content p{
     font-size: 1.5rem;
-    color:#444444;
+    color:#2f4858;
     padding:.5rem 0;
     padding-top: 1rem;
     line-height: 1.5;
@@ -319,7 +319,7 @@ header .fa-bars{
 
 .products .box-container .box .content h3{
     font-size: 2.5rem;
-    color:#333;
+    color:#560000;
 }
 
 .products .box-container .box .content .introduction{
@@ -331,7 +331,7 @@ header .fa-bars{
 
 .products .box-container .box .content .introduction span{
     font-size: 1.5rem;
-    color:#999;
+    color:#555;
     font-weight: lighter;
     /*text-decoration: line-through;*/
 }
@@ -421,7 +421,7 @@ header .fa-bars{
 .contact .row form .box{
     padding:1rem;
     font-size: 1.7rem;
-    color:#333;
+    color:#333333;
     text-transform: none;
     border:.1rem solid rgba(0,0,0,.1);
     border-radius: .5rem;
