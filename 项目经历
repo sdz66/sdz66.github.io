@@ -1,0 +1,127 @@
+   <tr>
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='r2r_image'><video  width=100% muted autoplay loop>
+                    <source src="images/r2r.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/r2r.jpg' width=100%>
+                  </div>                 
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://relight-to-reconstruct.github.io/">
+                    <span class="papertitle">测试1</span>
+                  </a>
+                  <br>
+                  <a href="https://hadizayer.github.io/">测试2</a>,
+                  <a href="https://henzler.github.io/">测试3</a>,
+                          <strong>测试4</strong>, 
+                  <a href="https://jbhuang0604.github.io/">测试5</a>,
+                  <a href="https://pratulsrinivasan.github.io/">测试6</a>, 
+                  <a href="https://dorverbin.github.io/">测试7</a>
+                  <br>
+                  <em>测试</em>, 2025 &nbsp <font color=#FF8080><strong>(Highlight)</strong></font>
+                  <br>
+                  <a href="https://relight-to-reconstruct.github.io/">测试8</a>
+                  /
+                  <a href="https://arxiv.org/abs/2412.15211">测试9</a>
+                  <p></p>
+                  <p>测试10</p>
+                </td>
+    </tr>
+
+    <tr bgcolor="#ffffd0">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='r2r_image'><video  width=100% muted autoplay loop>
+          <source src="images/r2r.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/r2r.jpg' width=100%>
+        </div>                 
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://relight-to-reconstruct.github.io/">
+          <span class="papertitle">测试1</span>
+        </a>
+        <br>
+        <a href="https://hadizayer.github.io/">测试2</a>,
+        <a href="https://henzler.github.io/">测试3</a>,
+                <strong>测试4</strong>, 
+        <a href="https://jbhuang0604.github.io/">测试5</a>,
+        <a href="https://pratulsrinivasan.github.io/">测试6</a>, 
+        <a href="https://dorverbin.github.io/">测试7</a>
+        <br>
+        <em>测试</em>, 2025 &nbsp <font color=#FF8080><strong>(Highlight)</strong></font>
+        <br>
+        <a href="https://relight-to-reconstruct.github.io/">测试8</a>
+        /
+        <a href="https://arxiv.org/abs/2412.15211">测试9</a>
+        <p></p>
+        <p>测试10</p>
+      </td>
+</tr>
+
+<tr>
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='r2r_image'><video  width=100% muted autoplay loop>
+      <source src="images/r2r.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video></div>
+      <img src='images/r2r.jpg' width=100%>
+    </div>                 
+  </td>
+  <td style="padding:8px;width:80%;vertical-align:middle">
+    <a href="https://relight-to-reconstruct.github.io/">
+      <span class="papertitle">测试1</span>
+    </a>
+    <br>
+    <a href="https://hadizayer.github.io/">测试2</a>,
+    <a href="https://henzler.github.io/">测试3</a>,
+            <strong>测试4</strong>, 
+    <a href="https://jbhuang0604.github.io/">测试5</a>,
+    <a href="https://pratulsrinivasan.github.io/">测试6</a>, 
+    <a href="https://dorverbin.github.io/">测试7</a>
+    <br>
+    <em>测试</em>, 2025 &nbsp <font color=#FF8080><strong>(Highlight)</strong></font>
+    <br>
+    <a href="https://relight-to-reconstruct.github.io/">测试8</a>
+    /
+    <a href="https://arxiv.org/abs/2412.15211">测试9</a>
+    <p></p>
+    <p>测试10</p>
+  </td>
+</tr>
+
+<tr bgcolor="#ffffd0">
+<td style="padding:16px;width:20%;vertical-align:middle">
+<div class="one">
+<div class="two" id='r2r_image'><video  width=100% muted autoplay loop>
+<source src="images/r2r.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video></div>
+<img src='images/r2r.jpg' width=100%>
+</div>                 
+</td>
+<td style="padding:8px;width:80%;vertical-align:middle">
+<a href="https://relight-to-reconstruct.github.io/">
+<span class="papertitle">测试1</span>
+</a>
+<br>
+<a href="https://hadizayer.github.io/">测试2</a>,
+<a href="https://henzler.github.io/">测试3</a>,
+  <strong>测试4</strong>, 
+<a href="https://jbhuang0604.github.io/">测试5</a>,
+<a href="https://pratulsrinivasan.github.io/">测试6</a>, 
+<a href="https://dorverbin.github.io/">测试7</a>
+<br>
+<em>测试</em>, 2025 &nbsp <font color=#FF8080><strong>(Highlight)</strong></font>
+<br>
+<a href="https://relight-to-reconstruct.github.io/">测试8</a>
+/
+<a href="https://arxiv.org/abs/2412.15211">测试9</a>
+<p></p>
+<p>测试10</p>
+</td>
+</tr>
