@@ -1,61 +1,368 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>单栋芝</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1><img src="src/img/logo.png" alt="logo" style="height: 2em;"></h1>
-    </header>
-    <br><br><br><br><br><br>
-    <div class="profile-container">
-        <section id="photo">
-            <img src="src\img\img.jpg" alt="个人照片">
-        </section>
-        <section id="personal-info">
-            <h2>个人信息</h2>
-            <p>姓名：单栋芝</p>
-            <p>性别：男</p>
-            <p>电话：19825121550</p>
-            <p class="lowercase-email">邮箱：hhusdz@qq.com</p>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-        </section>
-    </div>
-    <section id="education">
-        <h2>教育背景</h2>
-        <p>2023.09 - 2027.06 河海大学（211）人工智能与自动化学院 智能科学与技术 本科</p>
-        <p>2024.09 - 2026.06 河海大学（211）      法学院         涉外法治    辅修</p>
-    </section>
-    <section id="work-experience">
-        <h2>工作经历</h2>
-        <p>2025.02 **** AIGC实习生</p>
-    </section>
-    <section id="skills">
-        <h2>技能</h2>
-        <ul>
-            <li>熟练使用C语言、Python、matlab等进行编程</li>
-            <li>熟悉TensorFlow、pytorch等深度学习框架及前沿算法，进行应用开发</li>
-            <li>熟悉常见的数据结构：数组、链表、栈、队列、二叉树等</li>
-            <li>熟悉常见的算法：排序、二分查找、双指针、递归、回溯、动态规划算法</li>
-            <li>熟悉Linux操作系统，能够使用Linux环境从事开发</li>
-        </ul>
-    </section>
-    <section id="projects">
-        <h2>项目经验</h2>
-        <div class="container1">
-        <p>(1) 基于TensorFlow深度学习方法的智能车目标检测模型</p>
-        <p>项目描述：使用计算机视觉训练模型，搭建硬件检测平台，使用python进行开发部署，实时监测车辆周围环境作出相应改变，并在发布端进行播报。</p>
-        <p>主要工作：配置深度学习环境并编写训练脚本，完成图像标注、脚本训练，开发检测程序并将模型接入智能车中。</p>
-        </div>
-        <div class="container2">
+    <title>sdz</title>
+
+    <meta name="author" content="单栋芝">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+   
+    <style>
+      /* 批注文字样式 */
+  .annotated-text111 {
+      display: inline;
+      background-color: #FFF176; /* 荧光黄背景色 */
+      padding: 0 2px;
+      cursor: pointer;
+      position: relative;
+      border-radius: 2px; /* 轻微圆角 */
+  }
+  
+  /* 批注框样式 */
+  .annotation-box111 {
+      display: none;
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      padding: 10px;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 200px;
+      z-index: 1000;
+      border: 1px solid #e0e0e0; /* 添加灰色边框 */
+  }
+  
+  .annotation-box111 img {
+      max-width: 100%;
+      height: auto;
+  }
+  
+  .annotation-box111.active {
+      display: block;
+  }
+  
+  .content-container {
+      display: flex;
+      min-height: calc(100vh - 80px);
+  }
+    </style>
+  </head>
+
+  <body>
+   <br><br>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  单栋芝<span class="annotated-text111">文字<span class="annotation-box111">批注</span></span>
+                </p>
+                <p>
+                    <a href="https://www.hhu.edu.cn/">河海大学</a>2023级人工智能与自动化学院本科生，主修<span class="annotated-text111">智能科学与技术<span class="annotation-box111">Intelligence Science and Technology，属计算机类专业，主修程序设计、离散数学、数据结构、算法设计、机器学习、数据挖掘等计算机人工智能相关课程。</span></span>，辅修<span class="annotated-text111">涉外法治<span class="annotation-box111">开设于河海大学法学院，主修课程包括国际公法、国际私法、国际经济法、国际投资等。</span></span>。
+                    <br>熟悉深度学习框架开发，具有TensorFlow、PyTorch项目实践经验。
+                    <br>
+                    熟悉常用aigc技术，参与过多视角图像重投影、多视角图像拼接、多视角图像去雾等项目。对图像生成技术有深入了解，熟悉图像生成模型的训练与优化，具有图像生成模型的开发经验。
+                    <br>
+                    熟悉前端开发，具有HTML、CSS、JavaScript等前端技术的开发经验，能够独立开发前端页面。
+                    <br>
+                    熟悉后端开发，具有Python、Java等后端技术的开发经验，能够独立开发后端接口。
+                    <br>
+                    熟悉数据库开发，具有MySQL、MongoDB等数据库技术的开发经验，能够独立开发数据库。
+                </p>
+                
+                <p style="text-align:center">
+                  <span class="annotated-text111">邮箱<span class="annotation-box111">hhusdz@qq.com</span></span> &nbsp;/&nbsp;
+                  <span class="annotated-text111">GitHub<span class="annotation-box111">https://github.com/sdz66</span></span> &nbsp;/&nbsp;
+                  <span class="annotated-text111">手机<span class="annotation-box111">19825121550</span></span> &nbsp;/&nbsp;
+                
+                </p>
+              </td>
+              <td style="padding:2.5%;width:37%;max-width:37%">
+                <a href="src\img\img.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="src/img/img.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>教育背景</h2>
+                <p>2023.09 - 2027.06 河海大学（211）人工智能与自动化学院 智能科学与技术 本科</p>
+                <p>2024.09 - 2026.06 河海大学（211）法学院 涉外法治 辅修</p>
+                
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+<!-- 项目经历 -->
+            <table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
+              <tr>
+                <td>
+                  <h2>项目经历</h2>
+                </td>
+              </tr>
+            </tbody></table>
+
+    <tr>
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='r2r_image'><video  width=100% muted autoplay loop>
+                    <source src="images/r2r.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/r2r.jpg' width=100%>
+                  </div>                 
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://relight-to-reconstruct.github.io/">
+                    <span class="papertitle">测试1</span>
+                  </a>
+                  <br>
+                  <a href="https://hadizayer.github.io/">测试2</a>,
+                  <a href="https://henzler.github.io/">测试3</a>,
+                          <strong>测试4</strong>, 
+                  <a href="https://jbhuang0604.github.io/">测试5</a>,
+                  <a href="https://pratulsrinivasan.github.io/">测试6</a>, 
+                  <a href="https://dorverbin.github.io/">测试7</a>
+                  <br>
+                  <em>测试</em>, 2025 &nbsp <font color=#FF8080><strong>(Highlight)</strong></font>
+                  <br>
+                  <a href="https://relight-to-reconstruct.github.io/">测试8</a>
+                  /
+                  <a href="https://arxiv.org/abs/2412.15211">测试9</a>
+                  <p></p>
+                  <p>测试10</p>
+                </td>
+    </tr>
+
+    <tr bgcolor="#ffffd0">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='r2r_image'><video  width=100% muted autoplay loop>
+          <source src="images/r2r.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/r2r.jpg' width=100%>
+        </div>                 
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://relight-to-reconstruct.github.io/">
+          <span class="papertitle">测试1</span>
+        </a>
         <br>
-        <p>(2) 基于改进YOLOv8算法的钢材表面缺陷检测工业应用开发</p>
-        <p>项目描述：基于NEU-DET数据集，提出了一种面向钢材表面缺陷检测的改进型算法，有效提高了模型对不同尺度缺陷敏感性。</p>
-        </div>
-        <p>主要工作：由于缺陷在钢材表面图像中的占比极小，并且可能在复杂的光照和背景条件下更难以被识别，因此我对特征提取网络中的C2F模块进行了改进，使其更加适用于工业生产场景。最终利用训练出的模型进行应用开发并提供api接口，提高其实用价值。</p>
-    </section>
-</body>
+        <a href="https://hadizayer.github.io/">测试2</a>,
+        <a href="https://henzler.github.io/">测试3</a>,
+                <strong>测试4</strong>, 
+        <a href="https://jbhuang0604.github.io/">测试5</a>,
+        <a href="https://pratulsrinivasan.github.io/">测试6</a>, 
+        <a href="https://dorverbin.github.io/">测试7</a>
+        <br>
+        <em>测试</em>, 2025 &nbsp <font color=#FF8080><strong>(Highlight)</strong></font>
+        <br>
+        <a href="https://relight-to-reconstruct.github.io/">测试8</a>
+        /
+        <a href="https://arxiv.org/abs/2412.15211">测试9</a>
+        <p></p>
+        <p>测试10</p>
+      </td>
+</tr>
+
+<tr>
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='r2r_image'><video  width=100% muted autoplay loop>
+      <source src="images/r2r.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video></div>
+      <img src='images/r2r.jpg' width=100%>
+    </div>                 
+  </td>
+  <td style="padding:8px;width:80%;vertical-align:middle">
+    <a href="https://relight-to-reconstruct.github.io/">
+      <span class="papertitle">测试1</span>
+    </a>
+    <br>
+    <a href="https://hadizayer.github.io/">测试2</a>,
+    <a href="https://henzler.github.io/">测试3</a>,
+            <strong>测试4</strong>, 
+    <a href="https://jbhuang0604.github.io/">测试5</a>,
+    <a href="https://pratulsrinivasan.github.io/">测试6</a>, 
+    <a href="https://dorverbin.github.io/">测试7</a>
+    <br>
+    <em>测试</em>, 2025 &nbsp <font color=#FF8080><strong>(Highlight)</strong></font>
+    <br>
+    <a href="https://relight-to-reconstruct.github.io/">测试8</a>
+    /
+    <a href="https://arxiv.org/abs/2412.15211">测试9</a>
+    <p></p>
+    <p>测试10</p>
+  </td>
+</tr>
+
+<tr bgcolor="#ffffd0">
+<td style="padding:16px;width:20%;vertical-align:middle">
+<div class="one">
+<div class="two" id='r2r_image'><video  width=100% muted autoplay loop>
+<source src="images/r2r.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video></div>
+<img src='images/r2r.jpg' width=100%>
+</div>                 
+</td>
+<td style="padding:8px;width:80%;vertical-align:middle">
+<a href="https://relight-to-reconstruct.github.io/">
+<span class="papertitle">测试1</span>
+</a>
+<br>
+<a href="https://hadizayer.github.io/">测试2</a>,
+<a href="https://henzler.github.io/">测试3</a>,
+  <strong>测试4</strong>, 
+<a href="https://jbhuang0604.github.io/">测试5</a>,
+<a href="https://pratulsrinivasan.github.io/">测试6</a>, 
+<a href="https://dorverbin.github.io/">测试7</a>
+<br>
+<em>测试</em>, 2025 &nbsp <font color=#FF8080><strong>(Highlight)</strong></font>
+<br>
+<a href="https://relight-to-reconstruct.github.io/">测试8</a>
+/
+<a href="https://arxiv.org/abs/2412.15211">测试9</a>
+<p></p>
+<p>测试10</p>
+</td>
+</tr>
+
+          </tbody></table>
+
+          <!-- 荣誉 -->
+					<table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
+            <tr>
+              <td>
+                <h2>获奖经历</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            
+           
+            <tr>
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+						     <div class="colored-box" style="background-color: #fcb97d;">
+								 <h2>2025</h2>
+								 </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <p><em>2025.05</em> 中国服务外包创新创业大赛东部赛区 <em><font color=#FF8080><strong>一等奖</strong></font></em>（负责人）</p>
+                <p><em>2025.04</em> 电子商务三创赛 <em><font color=#FF8080><strong>校赛特等奖</strong></font></em>（第一名）</p>
+                <p><em>2025.01</em> 2025年度 <em><font color=#FF8080><strong>华为HSD</strong></font></em> 入选</p>
+                
+              </td>
+            </tr>
+
+
+            <tr>
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+						     <div class="colored-box" style="background-color: #007560;">
+								 <h2>2024</h2>
+								 </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:center">
+                <p><em>202</em> 江苏省<em><font color=#FF8080><strong>优秀小分队</strong></font></em>（负责人）</p>
+                <p><em>2024.11</em> 6th全球校园人工智能算法精英大赛<em><font color=#FF8080><strong>三等奖</strong></font></em>（负责人）</p>
+                <p><em>2024.06</em> 21th江苏省高数竞赛 <em><font color=#FF8080><strong>二等奖</strong></font></em></p>
+                <p><em>2024.06</em> 江苏省环境科学学会 <em><font color=#FF8080><strong>学生会员</strong></font></em></p>
+                <p><em>2024.05</em> 河海大学地学院 2024年度学霸笔记评选 <em><font color=#FF8080><strong>一等奖</strong></font></em>（第一名）</p>
+                <p><em>2024.05</em> 河海大学商学院 7th金融知识竞赛 <em><font color=#FF8080><strong>第4名</strong></font></em></p>
+              </td>
+            </tr>
+
+            <tr>
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+						     <div class="colored-box" style="background-color: #7bd9a4;">
+								 <h2>2023</h2>
+								 </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:center">
+                <p><em>2023.12</em> 河海大学 新生杯辩论赛<em><font color=#FF8080><strong>亚军</strong></font></em>（一辩/四辩）</p>
+                <p><em>2023.10</em> 河海大学地学院 新生杯辩论赛<em><font color=#FF8080><strong>最佳辩手</strong></font></em></p>
+                <p><em>2023.10</em> 河海大学 35th校园科技节“一站到底”防沉降模型设计竞赛<em><font color=#FF8080><strong>三等奖</strong></font></em>（负责人）</p>
+                <p><em>2023.10</em> 中国岩石力学与工程协会 <em><font color=#FF8080><strong>学生会员</strong></font></em></p>
+                
+              </td>
+            </tr>
+
+            <tr>
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+						     <div class="colored-box" style="background-color: #c3fcf1;">
+								 <h2>2022</h2>
+								 </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:center">
+                <p><em>2022.12</em> 连云港市教育局 连云港市物理竞赛 <em><font color=#FF8080><strong>一等奖</strong></font></em></p>
+                <p><em>2022.11</em> 中国物理学会 39th全国中学生物理竞赛 <em><font color=#FF8080><strong>三等奖</strong></font></em></p>
+                <p><em>2022.10</em> 江苏省物理学会 39th全国中学生物理竞赛（省级赛区） <em><font color=#FF8080><strong>二等奖</strong></font></em></p>
+                <p><em>2022.10</em> 江苏省数学学会 全国高中数学联合竞赛 <em><font color=#FF8080><strong>三等奖</strong></font></em></p>
+                <p><em>2022.01</em> 江苏省赣榆高级中学 2021-2022学年 <em><font color=#FF8080><strong>年级“五好学生”</strong></font></em></p>
+              </td>
+            </tr>
+
+            <tr>
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+						     <div class="colored-box" style="background-color: #659b91;">
+								 <h2>其他荣誉</h2>
+								 </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:center">
+                <p><em>2025.02</em> 共青团中央 “中国历代绘画大系”<em><font color=#FF8080><strong>优秀志愿者</strong></font></em></p>
+                <p><em>2024.12</em> 中国环境科学学会 “大学生在行动”<em><font color=#FF8080><strong>优秀海报</strong></font></em>（第二名）</p>
+                <p><em>2024.12</em> 江苏省环境科学学会 千乡万村环保科普行动<em><font color=#FF8080><strong>优秀小分队</strong></font></em>（负责人）</p>
+                <p><em>2024.12</em> 河海大学 2023-2024学年<em><font color=#FF8080><strong>优秀学生干部</strong></font></em></p>
+                <p><em>2024.11</em> 河海大学 2023-2024学年<em><font color=#FF8080><strong>社会工作优秀奖学金</strong></font></em></p>
+                <p><em>2024.11</em> 河海大学 2023-2024学年<em><font color=#FF8080><strong>艺术体育优秀奖学金</strong></font></em></p>
+                <p><em>2024.11</em> 河海大学 2023-2024学年<em><font color=#FF8080><strong>精神文明奖学金</strong></font></em></p>
+                <p><em>2024.10</em> 河海大学 暑期社会实践<em><font color=#FF8080><strong>先进个人</strong></font></em></p>
+                <p><em>2024.08</em> 连云港市团委 三下乡社会实践<em><font color=#FF8080><strong>优秀社会实践团队</strong></font></em>（负责人）</p>
+                <p><em>2024.04</em> 河海大学 “源泉工程”社会实践活动<em><font color=#FF8080><strong>优秀实践团队</strong></font></em>（负责人）</p>
+                <p><em>2024.04</em> 河海大学 2023年度<em><font color=#FF8080><strong>优秀共青团员</strong></font></em></p>          
+                </td>
+            </tr>
+						
+            
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+    <script>
+      // 在页面加载完成后添加事件监听
+    document.addEventListener('DOMContentLoaded', function() {
+        const annotatedTexts = document.querySelectorAll('.annotated-text111');
+        
+        annotatedTexts.forEach(text => {
+            text.addEventListener('mouseenter', function() {
+                const box = this.querySelector('.annotation-box111');
+                box.classList.add('active');
+            });
+            
+            text.addEventListener('mouseleave', function() {
+                const box = this.querySelector('.annotation-box111');
+                box.classList.remove('active');
+            });
+        });
+    });
+    </script>
+  </body>
+  
 </html>
