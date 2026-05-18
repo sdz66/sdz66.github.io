@@ -10,6 +10,9 @@
     <link rel="shortcut icon" href="src/img/logo.png" type="image/x-icon">
    
     <style>
+      /* 桌面端隐藏移动端照片 */
+      .mobile-photo { display: none; }
+
       /* 批注文字样式 */
   .annotated-text111 {
       display: inline;
@@ -61,27 +64,46 @@
       table-layout: fixed;
     }
 
-    /* 头像区域：文字和图片上下排列 */
+    /* 显示移动端照片 */
+    .mobile-photo {
+      display: block !important;
+      width: 70px !important;
+      min-width: 70px !important;
+    }
+
+    /* 头部区域：照片和名字简介并列 */
+    .header-top {
+      display: flex !important;
+      align-items: center !important;
+      gap: 12px !important;
+      margin-bottom: 15px !important;
+    }
+
+    .intro-text {
+      flex: 1 !important;
+    }
+
     .header-info td {
       display: block !important;
       width: 100% !important;
       max-width: 100% !important;
-      text-align: center !important;
       padding: 10px 5% !important;
     }
 
-    .header-info td:last-child {
-      padding: 10px 20% !important;
+    .header-info .desktop-photo {
+      display: none !important;
     }
 
     .header-info h2 {
-      font-size: 1.5em !important;
-      text-align: center;
+      font-size: 1.4em !important;
+      text-align: left;
+      margin-bottom: 4px !important;
     }
 
     .header-info p {
-      text-align: center;
-      font-size: 0.9em !important;
+      text-align: left;
+      font-size: 0.85em !important;
+      margin-bottom: 8px !important;
     }
 
     /* 技能模块缩小内边距 */
@@ -200,8 +222,17 @@
   }
 
   @media (max-width: 480px) {
-    .header-info td:last-child {
-      padding: 10px 25% !important;
+    .mobile-photo {
+      width: 55px !important;
+      min-width: 55px !important;
+    }
+
+    .header-info h2 {
+      font-size: 1.2em !important;
+    }
+
+    .header-info p {
+      font-size: 0.8em !important;
     }
 
     .skills-box p {
@@ -228,13 +259,20 @@
           <table class="header-info" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr style="padding:0px">
               <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <h2 style="font-size:1.8em;color:#1a1a1a;margin-bottom:5px;letter-spacing:2px;">单栋芝</h2>
-                <p style="color:#666;font-size:0.95em;margin-bottom:15px;">
-                  <span class="annotated-text111">河海大学<span class="annotation-box111"> 河海大学（Hohai University），简称"河海（HHU）"，教育部直属全国重点大学，"双一流"、"211工程"、"985工程优势学科创新平台"重点建设高校，全国首批具有博士、硕士、学士三级学位授予权的高校之一，入选教育部-华为"智能基座"产教融合协同育人基地，被誉为"水利高层次创新创业人才培养的摇篮和水利科技创新的重要基地"。</span></span>2023级人工智能与自动化学院本科生
-                </p>
-                <p style="margin-bottom:20px;">
-                  主修<span class="annotated-text111">智能科学与技术<span class="annotation-box111">智能科学与技术，属计算机类专业，主修程序设计、离散数学、数据结构、算法设计、机器学习、数据挖掘等计算机人工智能相关课程。</span></span>&nbsp;/&nbsp;辅修<span class="annotated-text111">涉外法治<span class="annotation-box111">开设于河海大学法学院，主修课程包括国际公法、国际私法、国际经济法、国际投资等。</span></span>
-                </p>
+                <div class="header-top">
+                  <div class="mobile-photo">
+                    <a href="src/img/img.jpg"><img style="width:100%;max-width:100%;object-fit:cover;border-radius:50%;box-shadow:0 4px 15px rgba(0,0,0,0.1);" alt="profile photo" src="src/img/img.jpg" class="hoverZoomLink"></a>
+                  </div>
+                  <div class="intro-text">
+                    <h2 style="font-size:1.8em;color:#1a1a1a;margin-bottom:5px;letter-spacing:2px;">单栋芝</h2>
+                    <p style="color:#666;font-size:0.95em;margin-bottom:15px;">
+                      <span class="annotated-text111">河海大学<span class="annotation-box111"> 河海大学（Hohai University），简称"河海（HHU）"，教育部直属全国重点大学，"双一流"、"211工程"、"985工程优势学科创新平台"重点建设高校，全国首批具有博士、硕士、学士三级学位授予权的高校之一，入选教育部-华为"智能基座"产教融合协同育人基地，被誉为"水利高层次创新创业人才培养的摇篮和水利科技创新的重要基地"。</span></span>2023级人工智能与自动化学院本科生
+                    </p>
+                    <p style="margin-bottom:20px;">
+                      主修<span class="annotated-text111">智能科学与技术<span class="annotation-box111">智能科学与技术，属计算机类专业，主修程序设计、离散数学、数据结构、算法设计、机器学习、数据挖掘等计算机人工智能相关课程。</span></span>&nbsp;/&nbsp;辅修<span class="annotated-text111">涉外法治<span class="annotation-box111">开设于河海大学法学院，主修课程包括国际公法、国际私法、国际经济法、国际投资等。</span></span>
+                    </p>
+                  </div>
+                </div>
 
                 <!-- 技能部分 -->
                 <div class="skills-box" style="background:#f8f9fa;padding:18px 20px;border-radius:12px;">
@@ -261,7 +299,7 @@
                   </td>
                 </tr></tbody></table>
               </td>
-              <td style="padding:2.5%;width:37%;max-width:37%">
+              <td class="desktop-photo" style="padding:2.5%;width:37%;max-width:37%">
                 <a href="src/img/img.jpg"><img style="width:100%;max-width:100%;object-fit:cover;border-radius:50%;box-shadow:0 4px 15px rgba(0,0,0,0.1);" alt="profile photo" src="src/img/img.jpg" class="hoverZoomLink"></a>
               </td>
             </tr>
